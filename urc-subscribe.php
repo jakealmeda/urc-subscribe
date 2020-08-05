@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
-add_action( 'before_content_sidebar_wrap', 'urc_subscribe_function' );
+add_action( 'after_header', 'urc_subscribe_function' );
 function urc_subscribe_function() {
 	?>
 	<div class="item-subscribe">
