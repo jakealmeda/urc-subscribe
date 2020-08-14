@@ -13,9 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
-add_action( 'after_header', 'urc_subscribe_function' );
+add_action( 'genesis_before_content_sidebar_wrap', 'urc_subscribe_function' );
 function urc_subscribe_function() {
 	?>
+	<style>
+		@media screen and (min-width: 768px) {
+			.module.subscribe {
+			    display: none;
+			}
+		}
+		.module.subscribe {
+			border: 1px solid #ccc;
+			margin-bottom: 1.5rem;
+		}
+	</style>
+
+	<aside class="module subscribe">
 	<div class="item-subscribe">
 	<div class="pretitle"><span class="fontsize-xsml">For A</span> <span class="fontsize-sml">LIMITED TIME ONLY</span><span class="fontsize-xsml">Get </span> <span class="fontsize-sml">FREE</span> <span class="fontsize-xsml">Copies Of My</span></div>
 	  <div class="photo"></div>
@@ -57,5 +70,6 @@ function urc_subscribe_function() {
 
 	<div class="disclaimer">Enter your name &amp; email in the boxes above to gain access to FREE Digital Online Versions of my popular eBooks &amp; audio course. When you click the “Instant Access” button, you will gain access to the members area of my website to read my eBooks, &amp; listen to the audio lessons right in your web browser! You’ll also get my best pickup, dating, relationship &amp; life success secrets &amp; strategies in my FREE newsletter. All information is 100% confidential. “Employ your time in improving yourself by other men’s writings, so that you shall gain easily what others have labored hard for.” ~ Socrates. “The man who doesn’t read good books has no advantage over the man who can’t read them.” ~ Mark Twain</div>
 	</div>
+	</aside>
 	<?php
 }
