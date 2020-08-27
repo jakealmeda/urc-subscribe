@@ -35,7 +35,7 @@ function urc_subscribe_function() {
 	  <div class="title"><span class="fontsize-med">Enter Your Name &amp; Email Below for Instant Access:</span></div>
 
 	<!-- Begin Mailchimp Signup Form -->
-	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+	<!--link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"-->
 	<!--style type="text/css">
 	  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 	  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
