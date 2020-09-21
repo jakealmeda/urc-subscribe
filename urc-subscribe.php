@@ -2,7 +2,7 @@
 /**
  * Plugin Name: URC Subscribe
  * Description: Handle all the ads for the site and pulled via shortcode
- * Version: 4.0
+ * Version: 4.1
  * Author: Jake Almeda
  * Author URI: http://smarterwebpackages.com/
  * Network: true
@@ -30,7 +30,7 @@ function urc_subscribe_function() {
 
 	<aside class="module subscribe">
 	<div class="item-subscribe">
-	<div class="pretitle"><span class="fontsize-xsml">For A</span> <span class="fontsize-sml">LIMITED TIME ONLY</span><span class="fontsize-xsml">Get </span> <span class="fontsize-sml">FREE</span> <span class="fontsize-xsml">Copies Of My</span></div>
+	<div class="pretitle"><span class="fontsize-xsml">For A</span> <span class="fontsize-sml">LIMITED TIME ONLY</span><br><span class="fontsize-xsml">Get </span> <span class="fontsize-sml">FREE</span> <span class="fontsize-xsml">Copies Of My</span></div>
 	  <div class="photo"></div>
 	  <div class="title"><span class="fontsize-med">Enter Your Name &amp; Email Below for Instant Access:</span></div>
 
@@ -61,7 +61,7 @@ function urc_subscribe_function() {
 	    <div class="response" id="mce-success-response" style="display:none"></div>
 	  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8fcb0ea8d36b15793f40f7ee8_0463614dd6" tabindex="-1" value=""></div>
-	    <div class="clear formsubmit"><input type="submit" value="Instant Access" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="return gtag_report_conversion('https://cor.smarterwebpackage.com/members-section')"></div>
+	    <div class="clear formsubmit"><input type="submit" value="Instant Access" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="return gtag_report_conversion('https://understandingrelationships.com/members-section')"></div>
 	    </div>
 	</form>
 	</div>
