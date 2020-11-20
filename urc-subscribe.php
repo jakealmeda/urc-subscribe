@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
+require_once( 'mailchimp-embed.php' );
+
 //add_action( 'genesis_before_content_sidebar_wrap', 'urc_subscribe_function' ); // original
 add_action( 'genesis_before_content', 'urc_subscribe_function' );
 function urc_subscribe_function() {
@@ -38,6 +40,11 @@ function urc_subscribe_function() {
     	global $post; //$post->ID
     	if( in_array( $post->post_name, $list_pages ) ) {
     		$hide_on_these_pages = '';
+
+    		// insert original subscribe pane if free-ebook page
+    		if( $post->post_name == 'free-ebook' ) {
+    			$hide_on_these_pages = setup_original_subsribe();
+    		}
     	} else {
     		$hide_on_these_pages = '<div class="module cta-main"><div class="module-wrap">
 										<div><a class="item image link" href="'.$free_ebook_page.'" data-type="page" data-id="1536" data-id="freeebook"><img src="'.$upload_dir[ "baseurl" ].'/cta-mobile-free-ebook.jpg" alt="" class="wp-image-41159"/></a></div>
@@ -49,8 +56,7 @@ function urc_subscribe_function() {
 									</div></div>';
     	}
 
-		$content = $hide_on_these_pages.'
-			<div class="group grid-cta-icon">
+		$content = $hide_on_these_pages.'<div class="group grid-cta-icon">
 				<div class="module cta-icon"><div class="module-wrap">
 					<div><a class="item image link" href="'.$products_page.'" data-type="page" data-id="1519"><img src="'.$upload_dir[ "baseurl" ].'/cta-mobile-coaching-icon.png" alt="" class="wp-image-41163" width="50" height="50"></a></div>
 					<div class="items info"><h3><a class="item title link" href="'.$products_page.'" data-type="page" data-id="1519">Coaching</a></h3><div><a class="item cta link" href="'.$products_page.'" data-type="page" data-id="1519">Click To View</a></div></div>
