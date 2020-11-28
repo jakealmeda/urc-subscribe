@@ -1,13 +1,5 @@
 <?php
-/**
- * Plugin Name: URC Subscribe
- * Description: Handle all the ads for the site and pulled via shortcode
- * Version: 4.1
- * Author: Jake Almeda
- * Author URI: http://smarterwebpackages.com/
- * Network: true
- * License: GPL2
- */
+
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
